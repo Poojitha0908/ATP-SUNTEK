@@ -1,0 +1,11 @@
+let courses = ["javascript", "react", "node", "mongodb", "express"];
+let r=courses.filter(ele=>ele.length>5)
+console.log(r)
+let r1=courses.map(ele=>ele.toUpperCase())
+console.log(r1)
+let r2=r1.reduce((acc,ele)=>acc+' | '+ele)
+console.log(r2)
+let r3=courses.find(ele=>ele==='react')
+console.log(r3)
+let r4=courses.findIndex(ele=>ele==='node')
+console.log(r4)

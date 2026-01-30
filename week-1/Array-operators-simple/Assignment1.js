@@ -1,0 +1,11 @@
+let temperatures = [32, 35, 28, 40, 38, 30, 42];
+let r=temperatures.filter((element)=>element>35)
+console.log(r)
+let r1=temperatures.map((element)=>(element*9/5)+32)
+console.log(r1)
+let r2=temperatures.reduce((acc,ele)=>acc+ele)
+console.log(r2/temperatures.length)
+let r3=temperatures.find(ele=>(ele>40))
+console.log(r3)
+let r4=temperatures.findIndex(ele=>(ele===28))
+console.log(r4)
