@@ -1,0 +1,66 @@
+### Read al users
+GET http://127.0.0.1:4000/user-api/users
+
+
+### Read user by objectid
+GET http://127.0.0.1:4000/user-api/users/697e29c3f2dbe5b688ec9785
+
+### create user
+POST http://127.0.0.1:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"Poojitha",
+    "password":"Pooju",
+    "age":23
+}
+
+###Update user
+PUT http://127.0.0.1:4000/user-api/users/697e29c3f2dbe5b688ec9785
+Content-Type: application/json
+
+{
+    "username":"Niha Dobrev",
+    "password":"niha",
+    "age":23
+}
+
+### Delete user
+DELETE http://127.0.0.1:4000/user-api/users/697e29c3f2dbe5b688ec9785
+Content-Type: application/json
+
+{
+    "username":"Niha Dobrev",
+    "password":"niha",
+    "age":23
+}
+
+### Read all products
+GET http://127.0.0.1:4000/product-api/products
+
+
+###Read product by pid
+GET http://127.0.0.1:4000/product-api/products/697e27f3be8db3049d27a398
+
+### create product
+POST  http://127.0.0.1:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":2,
+    "productName":"Iphone",
+    "productPrice":70000
+    
+}
+
+
+###update product
+PUT http://127.0.0.1:4000/product-api/products/697e27f3be8db3049d27a398
+Content-Type: application/json
+
+{
+    "productId":20,
+    "productName":"Iphone",
+    "productPrice":70000
+
+}
