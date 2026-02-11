@@ -1,0 +1,34 @@
+GET http://127.0.0.1:4000/product-api/products
+
+### create product
+POST  http://127.0.0.1:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productName":"Mobile",
+    "price":10000,
+    "brand":"Apple"
+    
+}
+
+
+
+###
+POST http://127.0.0.1:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"ramu",
+    "email":"ramu@gmail.com",
+    "password":"ramu",
+    "cart":[]
+}
+
+
+###req to add product to cart
+PUT http://127.0.0.1:4000/user-api/user-cart/user-id/6981a51bff33722fb4f850ed/product-id/6981a516ff33722fb4f850ea
+
+
+
+###read user by id
+GET http://localhost:4000/user-api/users/6981a51bff33722fb4f850ed
