@@ -1,0 +1,124 @@
+### User Register
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "firstname":"Anurag",
+    "lastname":"User",
+    "email":"anurag.user@example.com",
+    "password":"User@1234",
+    "profileImageUrl":"https://example.com/avatars/user.png"
+}
+
+### User Login
+GET http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email":"anurag.user@example.com",
+    "password":"User@1234",
+    "role":"USER"
+}
+
+### Read article(USER)
+GET http://localhost:4000/user-api/articles
+
+
+### Update article(USER)
+PUT http://localhost:4000/user-api/articles
+Content-Type: application/json
+
+{
+    "articleId":"6989aa62c087f2bc502c85c3",
+    "comment":"like it"
+}
+
+
+### Author Register
+POST http://localhost:4000/author-api/users
+Content-Type: application/json
+
+{
+    "firstname":"Anurag",
+    "lastname":"Author",
+    "email":"anurag.author@example.com",
+    "password":"Author@1234",
+    "profileImageUrl":"https://example.com/avatars/author.png"
+}
+
+### Author Login
+GET http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email":"anurag.author@example.com",
+    "password":"Author@1234",
+    "role":"AUTHOR"
+}
+
+
+### Create article(AUTHOR)
+POST http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69896fa6de9cf8bddade4bd3",
+    "title":"test1 article",
+    "category":"programmming",
+    "content":"content of test1 article"
+}
+
+### Read article(AUTHOR)
+GET http://localhost:4000/author-api/articles/69896fa6de9cf8bddade4bd3
+
+
+
+### Update article(AUTHOR)
+PUT http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69896fa6de9cf8bddade4bd3",
+    "articleId":"69898fef35ecd67aa5e1ddca",
+    "title":"test2 article updated",
+    "category":"programmming",
+    "content":"content of test2 article updated"
+}
+
+### Delete article(AUTHOR)
+DELETE  http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69896fa6de9cf8bddade4bd3",
+    "articleId":"69898fef35ecd67aa5e1ddca",
+    "isArticleActive":false
+}
+
+
+
+### Logout
+GET http://localhost:4000/common-api/logout
+
+
+
+###Block user
+PUT http://localhost:4000/admin-api/block
+
+
+
+
+###unblock user
+PUT http://localhost:4000/admin-api/unblock
+
+
+
+### Changing password
+PUT http://localhost:4000/common-api/change-password
+Content-Type:application/json
+
+{
+    "email":"anurag.author@example.com",
+    "currentpassword":"Author@1234",
+    "new password":"Author123"
+}
