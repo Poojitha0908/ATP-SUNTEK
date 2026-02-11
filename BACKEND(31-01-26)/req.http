@@ -1,0 +1,82 @@
+### Read all users
+GET http://127.0.0.1:4000/user-api/users
+
+
+### Read user by objectid
+GET http://127.0.0.1:4000/user-api/users/697dfd66bba0af5126c12ebb
+
+### create user
+POST http://127.0.0.1:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"Pooju",
+    "password":"Pooju",
+    "age":22
+}
+
+###Update user
+PUT http://127.0.0.1:4000/user-api/users/697dfd66bba0af5126c12ebb
+Content-Type: application/json
+
+{
+    "username":"Poojitha",
+    "password":"Pooju",
+    "age":23
+}
+
+### Delete user
+DELETE http://127.0.0.1:4000/user-api/users/697dfd66bba0af5126c12ebb
+Content-Type: application/json
+
+{
+    "username":"Bhanu prasad",
+    "password":"manoj",
+    "age":23
+}
+
+
+
+### Read all products
+GET http://127.0.0.1:4000/product-api/products
+
+
+###Read product by pid
+GET http://127.0.0.1:4000/product-api/products/697dd065ed3e9208a1dd00a7
+
+### create product
+POST  http://127.0.0.1:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":10,
+    "productName":"Mobile",
+    "productPrice":20000
+    
+}
+
+
+###update product
+PUT http://127.0.0.1:4000/product-api/products/697dd065ed3e9208a1dd00a7
+Content-Type: application/json
+
+{
+    "productId":10,
+    "productName":"Mobile",
+    "productPrice":25000
+}
+
+
+
+### User authentication (login) 
+POST http://127.0.0.1:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "username":"Pooju",
+    "password":"Pooju"
+}
+
+
+###req for protected route
+GET http://localhost:4000/user-api/test
