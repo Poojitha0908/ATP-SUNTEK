@@ -1,0 +1,26 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #dcdcc8;
+        margin: 40px;
+        }
+    .highlight {
+        color: red;
+    }
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .content img {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .bottom-link {
+        color: red;
+    }
